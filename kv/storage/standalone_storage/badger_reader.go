@@ -6,6 +6,7 @@ import (
 	"github.com/pingcap-incubator/tinykv/kv/util/engine_util"
 )
 
+
 type BadgerReader struct {
 	db  *badger.DB
 	Txn *badger.Txn

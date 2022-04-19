@@ -41,7 +41,7 @@ func (s *StandAloneStorage) Reader(ctx *kvrpcpb.Context) (storage.StorageReader,
 }
 
 func (s *StandAloneStorage) Write(ctx *kvrpcpb.Context, batch []storage.Modify) error {
-	// Your Code Here (1).
+	// Your Code Here (1)
 	txn := s.db.NewTransaction(true)
 	for _, v := range batch {
 		switch v.Data.(type) {
